@@ -22,8 +22,7 @@ start_text = """
 ███████║██║███████╗    ╚██████╗╚██████╔╝██████╔╝███████╗██║  ██║
 ╚══════╝╚═╝╚══════╝     ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
 
-SeedCoin BOT V 2.4
-Prepared and Developed by: F.Davoodi                                                                                                    
+JOIN FOR MORE SCRIPTS: https://t.me/ashestricks                                                                                                      
                                                                    
 Select an action:
 
