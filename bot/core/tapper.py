@@ -443,8 +443,8 @@ class Tapper:
                     # print(tg_web_data)
                     http_client.headers["telegram-data"] = tg_web_data
                     access_token_created_time = time.time()
-                    token_live_time = randint(3500, 3600)
-                    await asyncio.sleep(delay=randint(10, 15))
+                    token_live_time = randint(2, 3)
+                    await asyncio.sleep(delay=randint(2, 3))
 
                 not_new_user = await self.check_new_user(http_client)
 
@@ -572,7 +572,7 @@ class Tapper:
                 if settings.AUTO_CLEAR_TASKS:
                     await self.fetch_tasks(http_client)
 
-                delay_time = randint(3400, 3600)
+                delay_time = randint(30, 60)
                 logger.info(f"{self.session_name} | Completed {self.session_name}, waiting {delay_time} seconds...")
                 await asyncio.sleep(delay=delay_time)
             except InvalidSession as error:
@@ -581,7 +581,7 @@ class Tapper:
             except Exception as error:
                 traceback.print_exc()
                 logger.error(f"{self.session_name} | Unknown error: {error}")
-                await asyncio.sleep(delay=randint(60, 120))
+                await asyncio.sleep(delay=randint(1, 2))
 
 
 
